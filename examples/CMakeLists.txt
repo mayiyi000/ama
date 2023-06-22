@@ -2,7 +2,7 @@
 
 find_package(Threads REQUIRED)
 
-# third-party
+
 
 # ...
 
