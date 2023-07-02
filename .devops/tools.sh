@@ -1,6 +1,5 @@
 #!/bin/bash
 set -e
-
 # Read the first argument into a variable
 arg1="$1"
 
