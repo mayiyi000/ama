@@ -62,3 +62,10 @@ if __name__ == "__main__":
 
   out = model(img).numpy()
   print(_LABELS[out.argmax()])
+  
+def test_modelscope_embedding_query() -> None:
+    """Test modelscope embeddings for query."""
+    document = "foo bar"
+    embedding = ModelScopeEmbeddings()
+    output = embedding.embed_query(document)
+    assert len(output) == 512
